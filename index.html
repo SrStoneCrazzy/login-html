@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sistema</title>
+    <link rel="stylesheet" href="stylle.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <main class="login-conteiner">
+        <section class="login-card">
+            <div class="text-center mb-4">
+                <div class="login-icon" aria-hidden="true">🔐</div>
+                <h1 class="h3 fw-bold mt-3">Bem viado!</h1>
+                <p class="text-secondary">
+                    Entre com seus dados para continuar
+                </p>
+            </div>
+           
+            <div>
+
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="login" class="form-label">Login</label>
+                        <input
+                            type="text"
+                            name="login"
+                            id="login"
+                            class="form-control"
+                            placeholder="Digite seu login..."
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senhas</label>
+                        <input
+                            type="password"
+                            name="senha"
+                            id="senha"
+                            class="form-control"
+                            placeholder="Digite sua senha..."
+                            required>
+                    </div>
+
+                    <div id="menssagem" class="alert d-nome" role="alert" aria-live="polite"></div>
+                    <button type="submit" id="btnLogin" class="btn btn-primary w-100 py-2">
+                        Entrar
+                    </button>
+                </form>
+
+                <p class="text-center text-secondary small mt-4 mb-0">
+                    Sistema de autenticação com JWT
+                </p>
+           
+            </div>
+        </section>
+    </main>
+   
+</body>
+</html>
